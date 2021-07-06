@@ -15,10 +15,10 @@ export default function About() {
                         <p>I am a graduate student in the department of computer science at the thompson river university.</p>
                         <br/>
                         <p>I have been working on several projects throughout my academic period, that has trained me to work
-                             in real environment and prove my ability to serve at my best. As a full time Student
-                              i worked hard to complete all my projectds and ovefcome all
+                             in real environment and prove my ability to serve at my best. As a full-time Student
+                              I worked hard to complete all my projects and ovecome all
                              the challenges that has enhanced my front-end, web designing
-                             and backend skills using React, Adobe XD and nodejs amd 
+                             and backend skills using React, Adobe XD and NodeJs and 
                              familiarizing myself with the current web building softwares.</p>
                         <br/>
                         <p>My interest lie in desgining and 
