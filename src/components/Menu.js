@@ -1,23 +1,28 @@
 import React from 'react'
 import '../css/menu.scss'
 export default function Menu({menuOpen, setmenuOpen}) {
+    //let targetElement = "#intro";
+
+    const handleClick = () => {
+        setmenuOpen(!menuOpen);
+    }
     return (
         <div className={`${menuOpen ? 'menu active': 'menu'}`}>
-            <ul>
+            <ul onClick={handleClick}>
                 <li>
-                    <a className="link" href="#intro" onClick={() => setmenuOpen(!menuOpen)}>Home</a>
+                    <a className="link" href="#intro"  >Home</a>
+                </li>
+                <li >
+                    <a className="link" href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a className="link" href="#projects" onClick={() => {setmenuOpen(!menuOpen);}}>Projects</a>
+                    <a className="link" href="#skills">Skills</a>
                 </li>
                 <li>
-                    <a className="link" href="#skills" onClick={() => setmenuOpen(!menuOpen)}>Skills</a>
+                    <a className="link" href="#about">About Me</a>
                 </li>
-                <li>
-                    <a className="link" href="#about" onClick={() => {setmenuOpen(!menuOpen);}}>About Me</a>
-                </li>
-                <li>
-                    <a className="link" href="#contact" onClick={() => setmenuOpen(!menuOpen)}>Contact</a>
+                <li >
+                    <a className="link" href="#contact" >Contact</a>
                 </li>
             </ul>
         </div>
