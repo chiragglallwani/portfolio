@@ -8,18 +8,23 @@ import QuoraIcon from '../images/quora.png';
 import Thankyou from '../images/shake.svg';
 import emailjs from 'emailjs-com'
 export default function Contact() {
+    const[sendersEmail, setSendersEmail] = useState("");
     const[sendersSubject, setSendersSubject] = useState("");
     const[senderMessage, setSendersMessage] = useState("");
-    const [message, setMessage] = useState(false);
     const handleSubmit = (e) => {
         e.preventDefault();
-        setMessage(!message);
-        emailjs.sendForm('service_2xhymqk','template_h1abvod', e.target, 'user_FSDlyBGfOha9P49cjl12g').then((result) => {
-            setSendersSubject("");
-            setSendersMessage("");
-        }, error => {
-            console.log(error.text);
-        })
+        if(sendersEmail === '' || sendersSubject === '' || senderMessage===''){
+            alert("Please enter your email address, Subject and Message");
+        }else{
+            emailjs.sendForm('service_2xhymqk','template_h1abvod', e.target, 'user_FSDlyBGfOha9P49cjl12g').then((result) => {
+                setSendersEmail("");
+                setSendersSubject("");
+                setSendersMessage("");
+            }, error => {
+                console.log(error.text);
+            })
+        }
+        
     }
     return (
         <div className="contact" id="contact">
@@ -30,10 +35,11 @@ export default function Contact() {
                 <div className="right">
                     <h2>Contact</h2>
                     <form onSubmit={handleSubmit}>
+                        <input onChange={e => setSendersEmail(e.target.value)} value={sendersEmail}  type="text" placeholder="From" name="From"/>
                         <input onChange={e => setSendersSubject(e.target.value)} value={sendersSubject}  type="text" placeholder="Subject" name="subject"/>
                         <textarea onChange={e => setSendersMessage(e.target.value)} value={senderMessage} type="text" placeholder="Message for me" name="message"></textarea>
                         <button type="submit">Send</button>
-                        {message && <span>Thank you!</span>}
+                        
                     </form>
                 </div>
             </div>

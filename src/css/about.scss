@@ -58,7 +58,7 @@
 
                 @include mobile{
                     flex: 7;
-                    padding: 10px;
+                    padding: 0 5px;
                     justify-content: flex-start;
                     align-items: center;
                 }
@@ -68,7 +68,7 @@
                     font-size: 2.5vw;
 
                     @include mobile{
-                        font-size: 8vw;
+                        font-size: 7.5vw;
                         margin-bottom: 2%;
                     }
                 }

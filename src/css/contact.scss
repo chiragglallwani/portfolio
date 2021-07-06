@@ -60,10 +60,11 @@
                 
                 input{
                     width: 90%;
-                    height: 30px;
+                    height: 20px;
                     font-size: 14px;
                     border-radius: 15px;
                     border: none;
+                    margin: 5px 0;
                     padding: 5px;
 
                     @include mobile{
@@ -79,11 +80,12 @@
     
                 textarea{
                     width: 90%;
-                    height: 200px;
+                    height: 180px;
                     font-size: 14px;
                     border-radius: 15px;
                     border: none;
                     padding: 10px 5px;
+                    margin-bottom: 10px;
 
                     @include mobile{
                         width: 90%;

@@ -8,13 +8,13 @@ export default function Menu({menuOpen, setmenuOpen}) {
                     <a className="link" href="#intro" onClick={() => setmenuOpen(!menuOpen)}>Home</a>
                 </li>
                 <li>
-                    <a className="link" href="#projects" onClick={() => setmenuOpen(!menuOpen)}>Projects</a>
+                    <a className="link" href="#projects" onClick={() => {setmenuOpen(!menuOpen);}}>Projects</a>
                 </li>
                 <li>
                     <a className="link" href="#skills" onClick={() => setmenuOpen(!menuOpen)}>Skills</a>
                 </li>
                 <li>
-                    <a className="link" href="#about" onClick={() => setmenuOpen(!menuOpen)}>About Me</a>
+                    <a className="link" href="#about" onClick={() => {setmenuOpen(!menuOpen);}}>About Me</a>
                 </li>
                 <li>
                     <a className="link" href="#contact" onClick={() => setmenuOpen(!menuOpen)}>Contact</a>
