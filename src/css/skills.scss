@@ -1,3 +1,136 @@
+@import '../css/global.scss';
 .skills{
-    background-color: darkorange;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .arrow{
+        position: absolute;
+
+
+        @include mobile{
+            display: none;
+        }
+
+        &.left{
+            left: 25px;
+        }
+        &.right{
+            right: 25px;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+
+    .head{
+        position: absolute;
+        top: 25px;
+        font-size: 40px;
+        color: white;
+
+        @include mobile{
+            top: 5px;
+            font-size: 20px;
+        }
+    }
+
+
+    .slider{
+        height: 350px;
+        display: flex;
+        position: absolute;
+        left: 0;
+        transition: all 2s ease;
+
+        @include mobile{
+            height: 80vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .container{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item{
+                width: 700px;
+                height: 100%;
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @include mobile{
+                    width: 90%;
+                    height: 150px;
+                    margin: 5px 0;
+                }
+
+                .left{
+                    flex: 4;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    @include mobile{
+                        flex: 6;
+                    }
+
+                    .leftContainer{
+                        width: 90%;
+                        height: 70%;
+                        display:flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: center;
+
+                        h2{
+                            font-size: 20px;
+                            color: black;
+                            @include mobile{
+                                font-size: 10px;
+                            }
+                        };
+                        p{
+                            font-size: 13px;
+                            @include mobile{
+                                font-size: 8px;
+                            }
+                        }
+                        
+                        
+                    }
+                }
+
+                .right{
+                    flex: 8;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @include mobile{
+                        flex: 3;
+                    }
+
+                    img{
+                        width: 400px;
+                        @include mobile{
+                            width: 200px;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
 }
+    }
+
+    

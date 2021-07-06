@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Menu from './components/Menu';
 import { useState } from 'react';
+import About from './components/About';
 
 
 function App() {
@@ -19,8 +20,9 @@ function App() {
       <div className="sections">
       
         <Intro />
-        <Skills />
         <Projects />
+        <Skills />
+        <About />
         <Contact />
       </div>
     </div>
