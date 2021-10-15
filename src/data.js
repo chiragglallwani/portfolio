@@ -4,6 +4,7 @@ import pinterestClone from './images/Screenshot (29).png';
 import healthease from './images/Screenshot (30).png';
 import messengerClone from './images/Screenshot (31).png';
 import reactTodo from './images/Screenshot (32).png';
+import ProductlySite from './images/Productly.png';
 export const BegginerProjects = [
     {
         id: 1,
@@ -44,5 +45,11 @@ export const IntermediateProjects = [
         title: 'Pinterest Clone',
         link: 'https://pinterest-clone-1jcbjv957-lalwanichirag3.vercel.app/',
         img: pinterestClone
-    }
+    },
+    {
+        id: 3,
+        title: 'Productly: E-Commerce-Website',
+        link: 'https://productly-80dfc.web.app/',
+        img: ProductlySite
+    },
 ]
