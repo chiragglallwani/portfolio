@@ -36,18 +36,12 @@ export const BegginerProjects = [
 export const IntermediateProjects = [
     {
         id: 1,
-        title: 'Tarotbypoonam',
-        link: 'https://cs.tru.ca/~clalwaniw21/TermProject/Controller.php',
-        img: tarotbyPoonam
-    },
-    {
-        id: 2,
         title: 'Pinterest Clone',
         link: 'https://pinterest-clone-1jcbjv957-lalwanichirag3.vercel.app/',
         img: pinterestClone
     },
     {
-        id: 3,
+        id: 2,
         title: 'Productly: E-Commerce-Website',
         link: 'https://productly-80dfc.web.app/',
         img: ProductlySite
