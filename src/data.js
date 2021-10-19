@@ -1,5 +1,4 @@
 import reactReduxTodo from './images/Screenshot (33).png';
-import tarotbyPoonam from './images/Screenshot (28).png';
 import pinterestClone from './images/Screenshot (29).png';
 import healthease from './images/Screenshot (30).png';
 import messengerClone from './images/Screenshot (31).png';
